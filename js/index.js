@@ -69,7 +69,7 @@ function headerContainerInit() {
             "font-size": "32px",
         });
         $(".titleBotFont").css({
-            "font-size": "22px",
+            "font-size": "18px",
         });
     } else {
         $(".headerTitleBox").css("width", "755px");
