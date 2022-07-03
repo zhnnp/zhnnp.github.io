@@ -1,0 +1,374 @@
+html::-webkit-scrollbar { 
+    display: none;            /* Safari and Chrome :scroll bar hide*/
+}
+html body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    -ms-overflow-style: none;/* Internet Explorer 10+ :scroll bar hide*/
+    scrollbar-width: none;  /* Firefox :scroll bar hide*/
+}
+
+.header-z1 {
+    position: fixed;
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+    background-image: url('../img/header-bgi.jpg');
+    /*背景图片不随着浏览器窗口大小改变而改变*/
+    background-size: cover;
+}
+
+.header-z2 {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.header-z3 {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    z-index: 2;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    transition-duration: 0.01s;
+    background: -ms-linear-gradient(top, rgb(255, 0, 0), rgb(9, 5, 233));
+    background: -moz-linear-gradient(top, rgb(255, 0, 0), rgb(9, 5, 233));
+    background: -webkit-linear-gradient(top, rgb(255, 2, 2), rgb(1, 5, 255));
+    background: -o-linear-gradient(top, rgb(255, 0, 0), rgb(9, 5, 233));
+}
+
+.header-z4 {
+    position:absolute;
+    z-index: 29;
+    width: 100%;
+    height: 600px;
+}
+
+.headerTitleBox {
+    width: 750px;
+    height: 100%;
+    position: relative;
+    z-index: 30;
+  
+
+}
+
+.headerContentBg {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    filter: alpha(opacity=20);
+    -moz-opacity: 0.2;
+    -khtml-opacity: 0.2;
+    opacity: 0.2;
+    z-index: 29;
+}
+
+.headerContent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 35;
+}
+
+.headerContentLogo {
+    width: 100%;
+    height: 150px;
+    padding-top: 10px;
+    background-image: linear-gradient(to bottom, rgba(216, 207, 207, 0.63), transparent);
+
+
+}
+
+.headerLogoBox {
+    width: 120px;
+    height: 120px;
+    border-radius: 70px;
+    border: 6px solid rgb(255, 255, 255);
+    margin: auto;
+    background: url('../img/1.png'), linear-gradient(rgb(255, 0, 0), rgb(36, 1, 102));
+    background-position: 1px -1px;
+    /*背景图片不随着浏览器窗口大小改变而改变*/
+    background-size: cover;
+    background-blend-mode: lighten;
+
+
+}
+
+.headerContentTitle {
+    width: 100%;
+    height: 140px;
+
+    border-radius: 30px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.685), transparent);
+
+}
+
+.headerTitleTop {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.titleTopFont {
+    
+    font-size: 55px;
+    font-weight: bold;
+    color: #001affa8;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.801);
+
+
+}
+
+
+.headerTitleBot {
+    width: 100%;
+    height: 60px;
+    line-height: 45px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.titleBotFont {
+    color: rgb(191, 192, 197);
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 3px 2px 1px rgb(0, 0, 0);
+
+}
+
+.header-personal-contianer{
+    width: 500px;
+    height: 640px;
+
+    margin: auto;
+    padding-top: 50px;
+}
+.personal-list{
+    width: 70%;
+    height: 80px;
+
+    margin:auto;
+}
+.personal-title{
+    width: 30%;
+    height: 80px;
+    float: left;
+    line-height: 80px;
+    text-align: right;
+    vertical-align: middle;
+}
+.personal-title span{
+    color: #0dd8f3;
+    font-size: 25px;
+    font-weight:700;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.795);
+
+}
+
+.personals{
+    width: 60%;
+    height: 80px;
+    margin-left: 5%;
+    float: left;
+    line-height: 83px;
+    text-align:left;
+    vertical-align: middle;
+}
+.personals span{
+    color: rgb(52, 97, 180);
+    font-size: 23px;
+    font-weight: 400;
+    cursor: pointer;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.993);
+}
+
+.personals span:hover{
+    color: #001aff;
+
+    text-shadow:  3px 3px 3px rgba(0, 0, 0, 0.993);
+}
+
+.githubHerfBox {
+    background-color: #101420;
+    width: 350px;
+    height: 50px;
+    position: fixed;
+    overflow: hidden;
+    cursor: pointer;
+    transform: rotate(45deg);
+    z-index: 100;
+
+}
+
+
+.githubHerfMenu {
+    width: 100%;
+    height: 62%;
+    margin-top: 7px;
+    border-top: 2px dashed #e6dbdb;
+    border-bottom: 2px dashed #e6dbdb;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.githubHerfMenu span {
+    color: #ffffff;
+    font-size: 22px;
+
+
+}
+
+
+@media screen and (max-width: 751px) {
+
+
+    .headerContent {
+        border: none;
+    }
+
+    .headerContentTitle {
+        border-bottom: 2px solid #9F2473;
+    }
+   
+
+
+}
+
+@media screen and (max-width: 355px) {
+
+.titleTopFont{
+    font-size: 32px;
+}
+.titleBotFont{
+    font-size: 18px;
+}
+   
+
+
+}
+
+.page1 {
+    width: 100%;
+    height: 100%;
+    position:relative;
+    background-color:#9E2E23;
+}
+.page2 {
+    width: 100%;
+    height: 100%;
+    position:relative;
+    background-color: #407D52;
+}
+
+.page3 {
+    width: 100%;
+    height: 100%;
+    position:relative;
+    background-color: #25406B
+}
+
+.bot {
+    width: 100%;
+    height: 100%;
+    position:relative;
+    background-color:#4F5F6C;
+}
+
+.page1-box{
+    width: 750px;
+    height: 100%;
+    margin: auto;
+
+}
+.page1-container{
+    width: 500px;
+    height: 100%;
+
+    margin: auto;
+}
+.page1-title-box{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    left: 10%;
+    line-height: 80px;
+    vertical-align: middle;
+}
+.page1-title-box span{
+    color: #1DA577;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: -175px;
+}
+
+.page1-title-box{
+    width: 400px;
+    height: 50px;
+    position:relative;
+    left: 50px;
+}
+.page1-content{
+    width: 400px;
+    height: 93%;
+    margin-left: 50px;
+    position:absolute;
+}
+
+.skills{
+    width: 90%;
+    margin-left: 10%;
+    height: 40px;
+    margin-top: 15%;
+}
+.skill-font{
+    width: 100%;
+    height: 34px;
+    line-height: 40px;
+    vertical-align: bottom;
+}
+.skill-font-left{
+    width: 2.3%;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #d8c1c1;
+    float: left;
+    margin-top: 16px;
+    margin-left: -16px;
+}
+
+.skill-font-right{
+    width: 95%;
+    height: 25px;
+    float: left;
+    line-height: 40px;
+    vertical-align: bottom;
+}
+
+.skill-font-right span{
+    color: rgb(224, 209, 209);
+    font-size: 20px;
+    font-weight: bold;
+}
+.skill-lever-bg{
+    width: 100%;
+    height: 6px;
+    background-color: #A0E1C9;
+    border-radius: 3px;
+}
+.skill-lever{
+    width: 0px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #1DA577;
+}
