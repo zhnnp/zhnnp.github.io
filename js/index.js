@@ -114,7 +114,7 @@ function githubMenuInit() {
             "line-height": "15px"
         });
         $("#githubSpan").css({
-            "font-size": "10px",
+            "font-size": "15px",
         });
     } else if (window_width < 360) {
         $(".titleTopFont").css({
