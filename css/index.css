@@ -82,7 +82,7 @@ html body {
     width: 100%;
     height: 150px;
     padding-top: 10px;
-    background-image: linear-gradient(to bottom, rgba(216, 207, 207, 0.63), transparent);
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), transparent);
 
 
 }
@@ -124,7 +124,7 @@ html body {
     font-size: 55px;
     font-weight: bold;
     color: #fff;
-    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.801);
+    text-shadow: 5px 5px 3px rgba(1, 2, 61, 0.801);
 
 
 }
